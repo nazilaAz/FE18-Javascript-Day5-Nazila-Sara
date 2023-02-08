@@ -1,4 +1,4 @@
-//3 Object for Car
+//3 Objects for Car
 const oCar1 = {
     cBrand: "Audi",
     carBrand: function() {
