@@ -64,36 +64,4 @@ document.getElementById("secondcol").innerHTML +=
 </div> 
 `;
 
-class Car {
-
-    cBrand;
-    cModel;
-    cColor;
-
-    constructor(carBrand, carModel, carColor) {
-        this.cBrand = carBrand;
-        this.cModel = carModel;
-        this.cColor = carColor;
-    }
-
-    carHas() {
-        return `<div>${this.cBrand}${this.cModel}${this.cColor}</div>`;
-    }
-}
-
-
-const sampleCar = new Car("Audi", "A6", "Black");
-
-document.getElementById("thirdcol").innerHTML +=
-    `
-<div class="card" style="width: 18rem;">
-<img src="img/Pic.png" class="card-img-top" alt="...">
-<div class="card-body">
-<h5 class="card-title">${sampleCar.cBrand} -  ${sampleCar.cModel}</h5>
-<h6 class="card-subtitle mb-2 text-muted">(${sampleCar.cColor})</h6>
-<p class="card-text">${sampleCar.carHas()}</p>
-<a href="#" class="card-link">Her/ His Information</a>
-<a href="#" class="card-link">Her / His Pet</a>
-</div>
-</div> 
-`;
+class Car {}
