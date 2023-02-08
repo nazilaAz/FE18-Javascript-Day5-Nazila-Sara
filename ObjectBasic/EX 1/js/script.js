@@ -30,24 +30,47 @@ console.log(oCar3.carColor());
 // 3 Objects for Animals
 const oAnimal1 = {
     aName: "cat",
-    aColor: "gray"
+    aColor: "gray",
+    animalName: function() {
+        return `This is a ${this.aName} and the color is ${this.aColor}`;
+    }
+};
 
-}
+console.log(oAnimal1.animalName());
+
+
 const oAnimal2 = {
-    aSpeed: "20"
-}
+    aSpeed: "20",
+    animalSpeed: function() {
+        return `The ${oAnimal1.aName} has ${this.aSpeed}`;
+    }
+};
+console.log(oAnimal2.animalSpeed());
+
+
 const oAnimal3 = {
-    aLegs: "4"
-}
+    aLegs: "4",
+    animalLegs: function() {
+        return `The ${oAnimal1.aName} has ${this.aLegs}`;
+    }
+};
+console.log(oAnimal3.animalLegs());
 
 //3 Objects for Person
 const oPerson1 = {
     pName: "Hannah",
-    pFamily: "Studeny"
-}
+    pFamily: "Lutz",
+    personInfo: function() {
+        return `${this.pName} has a ${oAnimal1.aName}. Her ${oAnimal1.aName}
+        is ${oAnimal1.aColor} and has ${oAnimal3.aLegs} Legs.`;
+    }
+};
+
+console.log(oPerson1.personInfo());
+
 const oPerson2 = {
     pAge: "25"
-}
+};
 const oPerson3 = {
     pWeight: "45"
-}
+};
