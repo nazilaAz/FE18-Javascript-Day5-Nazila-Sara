@@ -26,6 +26,15 @@ const oCar3 = {
 };
 console.log(oCar3.carColor());
 
+document.getElementById("container").innerHTML +=
+    `
+<div class="card mt-2" style="width: 18rem;">
+    <div class="card-body">
+                <p class="card-text">Some quick <mark> ${oCar1.cBrand} </mark> example text to <mark> ${oCar2.carModel()} </mark> title and make up the bulk of the card's <mark> ${oCar3.carColor()} </mark>.
+                </p>
+    </div>
+</div>
+`;
 
 // 3 Objects for Animals
 const oAnimal1 = {
@@ -56,6 +65,16 @@ const oAnimal3 = {
 };
 console.log(oAnimal3.animalLegs());
 
+document.getElementById("container").innerHTML +=
+    `
+<div class="card mt-2" style="width: 18rem;">
+    <div class="card-body">
+                <p class="card-text">Some quick <mark> ${oAnimal1.aName} </mark> example text to <mark> ${oAnimal2.animalSpeed()} </mark> title and make up the bulk of the card's <mark> ${oAnimal3.aLegs} </mark>.
+                </p>
+    </div>
+</div>
+`;
+
 //3 Objects for Person
 const oPerson1 = {
     pName: "Hannah",
@@ -72,5 +91,14 @@ const oPerson2 = {
     pAge: "25"
 };
 const oPerson3 = {
-    pWeight: "45"
+    pWeight: "45Kg"
 };
+document.getElementById("container").innerHTML +=
+    `
+<div class="card mt-2" style="width: 18rem;">
+    <div class="card-body">
+                <p class="card-text">Some quick <mark> ${oPerson1.pName}  ${oPerson1.pFamily}</mark> example text to <mark> ${oPerson2.pAge} </mark> title and make up the bulk of the card's <mark> ${oPerson3.pWeight} </mark>.
+                </p>
+    </div>
+</div>
+`;
